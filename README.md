@@ -1,0 +1,2 @@
+# DH1-G2
+Crear un formulario, que pedirá el nombre y el salario de un empleado. En caso que el empleado sea un Gerente se le hace un descuento de 20% sobre el sueldo (impuestos), si es subGerente se le hace un descuento del 15% y si es secretaria del 5%. El resultado debe mostrar qué tipo de empleado es, cuánto gana antes de los descuentos, cuánto le descuentan (en dinero) y cuánto le queda de sueldo líquido.
