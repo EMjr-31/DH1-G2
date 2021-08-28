@@ -15,11 +15,47 @@ namespace DH1_G2
         public Form1()
         {
             InitializeComponent();
+            ///
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rbtnSubGerente_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            ////variables
+            string Nombre = txtNombre.Text;
+            string Apellido = txtApellido.Text;
+            double sueldo = Convert.ToDouble(txtSalBruto.Text);
+            double Descuento, salarioNeto;
+
+            ///Selecciones radioButtons
+            //////Seleccion Gerente
+            if (rbtnGerente.Checked == true)
+            {
+                Descuento = sueldo * 0.25;
+                salarioNeto = sueldo - Descuento;
+
+            }
+            if (rbtnSubGerente.Checked == true)
+            {
+                Descuento = sueldo * 0.15;
+                salarioNeto = sueldo - Descuento;
+
+            }
+            if (rbtnSecretaria.Checked == true)
+            {
+                Descuento = sueldo * 0.05;
+                salarioNeto = sueldo - Descuento;
+
+            }
         }
     }
 }
