@@ -34,26 +34,35 @@ namespace DH1_G2
             string Nombre = txtNombre.Text;
             string Apellido = txtApellido.Text;
             double sueldo = Convert.ToDouble(txtSalBruto.Text);
-            double Descuento, salarioNeto;
+            double descuento, salarioNeto;
 
             ///Selecciones radioButtons
             //////Seleccion Gerente
             if (rbtnGerente.Checked == true)
             {
-                Descuento = sueldo * 0.25;
-                salarioNeto = sueldo - Descuento;
+                descuento = sueldo * 0.25;
+                salarioNeto = sueldo - descuento;
+                lbEmpleado.Text=Nombre + " " + Apellido;
+                txtDesc.Text = descuento.ToString();
+                txtSalBruto.Text = salarioNeto.ToString();
 
             }
             if (rbtnSubGerente.Checked == true)
             {
-                Descuento = sueldo * 0.15;
-                salarioNeto = sueldo - Descuento;
+                descuento = sueldo * 0.15;
+                salarioNeto = sueldo - descuento;
+                lbEmpleado.Text = Nombre + " " + Apellido;
+                txtDesc.Text = descuento.ToString();
+                txtSalBruto.Text = salarioNeto.ToString();
 
             }
             if (rbtnSecretaria.Checked == true)
             {
-                Descuento = sueldo * 0.05;
-                salarioNeto = sueldo - Descuento;
+                descuento = sueldo * 0.05;
+                salarioNeto = sueldo - descuento;
+                lbEmpleado.Text = Nombre + " " + Apellido;
+                txtDesc.Text = descuento.ToString();
+                txtSalBruto.Text = salarioNeto.ToString();
 
             }
         }
