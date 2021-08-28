@@ -44,7 +44,7 @@ namespace DH1_G2
                 salarioNeto = sueldo - descuento;
                 lbEmpleado.Text=Nombre + " " + Apellido;
                 txtDesc.Text = descuento.ToString();
-                txtSalBruto.Text = salarioNeto.ToString();
+                txtSaln.Text = salarioNeto.ToString();
 
             }
             if (rbtnSubGerente.Checked == true)
@@ -53,7 +53,7 @@ namespace DH1_G2
                 salarioNeto = sueldo - descuento;
                 lbEmpleado.Text = Nombre + " " + Apellido;
                 txtDesc.Text = descuento.ToString();
-                txtSalBruto.Text = salarioNeto.ToString();
+                txtSaln.Text = salarioNeto.ToString();
 
             }
             if (rbtnSecretaria.Checked == true)
@@ -62,7 +62,7 @@ namespace DH1_G2
                 salarioNeto = sueldo - descuento;
                 lbEmpleado.Text = Nombre + " " + Apellido;
                 txtDesc.Text = descuento.ToString();
-                txtSalBruto.Text = salarioNeto.ToString();
+                txtSaln.Text = salarioNeto.ToString();
 
             }
         }
